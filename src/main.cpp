@@ -1,7 +1,12 @@
+#include <app.hpp>
 
-
-#include <cstdio>
 int main()
 {
-    printf("ehello worlde\n");
+    App a;
+
+    if (a.run())
+        return 0;
+
+    return 1;
+
 }
