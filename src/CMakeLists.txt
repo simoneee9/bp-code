@@ -4,7 +4,11 @@ set(EXE_NAME "bakalarka")
 
 add_executable(${EXE_NAME}
     main.cpp
+
     app.cpp
+    log.cpp
+    renderer.cpp
+    window.cpp
 )
 
 target_compile_features(
@@ -21,6 +25,8 @@ target_include_directories(
 
 target_link_libraries(
     ${EXE_NAME}
-        glfw
+        GLEW::GLEW
+        glut
         glm::glm
+        glfw
 )

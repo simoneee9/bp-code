@@ -3,6 +3,7 @@
 ## Dependencies
 
   - GLEW >= 2.0
+  - GLUT
 
 ## Building
 
